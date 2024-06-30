@@ -34,4 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://mongo:7 docker://registry.cn-shanghai.aliyuncs.com/mutemoon/mongo:7
+        skopeo copy docker://mongo docker://registry.cn-shanghai.aliyuncs.com/mutemoon/mongo
+        skopeo copy docker://mongo-express docker://registry.cn-shanghai.aliyuncs.com/mutemoon/mongo-express
